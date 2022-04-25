@@ -146,20 +146,8 @@ class _InfoPageState extends State<Infopage> {
                           color: Color(0xFFF17532)),
                       child: ElevatedButton(
                           onPressed: () {
-                            //SAVE
-                            //print(alreadySaved);
-                            //print(doc.get("name"));
                             fav_list
                                 .add(doc.get("name").toString().toLowerCase());
-                            setState(() {
-                              // if (alreadySaved) {
-                              //   // void _pushSaved(){
-
-                              //   // }
-                              // }
-
-                              //final showName = doc.get("name");
-                            });
                           },
                           child: Text(
                             'Add to Favorite',
@@ -180,42 +168,4 @@ class _InfoPageState extends State<Infopage> {
       ),
     );
   }
-
-//   void pushSaved() {
-//     Navigator.of(context)
-//         .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-// //         final tiles = _Saved.contains());
-//       return ListTile(
-//         title: Row(
-//           children: [
-//             SizedBox(width: 20),
-//             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-//               Container(
-//                 width: MediaQuery.of(context).size.width * 0.7,
-//                 child: Text(
-//                   'showName',
-//                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-//                   overflow: TextOverflow.ellipsis,
-//                 ),
-//               ),
-//               SizedBox(height: 10),
-//               Container(
-//                 width: MediaQuery.of(context).size.width * 0.5,
-//                 child: Text(
-//                   "address",
-//                   style: TextStyle(
-//                     color: Colors.black,
-//                     fontSize: 14,
-//                     fontWeight: FontWeight.w400,
-//                   ),
-//                   overflow: TextOverflow.ellipsis,
-//                 ),
-//               ),
-//             ])
-//           ],
-//         ),
-//       );
-//     }));
-//   }
-
 }

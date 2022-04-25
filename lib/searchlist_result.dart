@@ -81,16 +81,6 @@ class SearchListState extends State<SearchList> {
                                               .get("cover"),
                                       fit: BoxFit.contain,
                                     ).image)),
-                                // child: Center(
-                                //   child: Text(
-                                //     'rger',
-                                //     style: TextStyle(
-                                //         fontSize: 20,
-                                //         fontWeight: FontWeight.bold,
-                                //         color: Colors.white),
-                                //     overflow: TextOverflow.clip,
-                                //   ),
-                                // ),
                               ),
                               SizedBox(width: 20),
                               Column(
